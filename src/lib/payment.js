@@ -1,6 +1,6 @@
 import { load } from "@cashfreepayments/cashfree-js";
 
-const MODE = import.meta.env.VITE_CASHFREE_MODE || "sandbox"; // "production" when live
+const MODE = import.meta.env.VITE_CASHFREE_MODE || "production"; // "production" when live
 const API = import.meta.env.VITE_API_URL || "";
 // Creates an order on the server, opens Cashfree checkout, then verifies the payment.
 // Resolves with the order id once Cashfree reports PAID, otherwise throws.
